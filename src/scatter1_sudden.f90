@@ -1,6 +1,6 @@
 module scatter1_sudden 
     !======================================================================
-    !This is the module for the 2D Time-Dependent Quantum Wavapacket Scattering 
+    !This is the module for the 1D Time-Dependent Quantum Wavapacket Scattering 
     !======================================================================
     use omp_lib 
     implicit none 
@@ -33,9 +33,9 @@ module scatter1_sudden
     character(10),parameter:: dir='./output/' ! the directory for the output files
     
     private
-    public:: TDQW2D 
+    public:: TDQW1D 
     contains
-    subroutine TDQW2D()!(out_WFRE,out_x,out_a,out_e)
+    subroutine TDQW1D()!(out_WFRE,out_x,out_a,out_e)
     !======================================================================
     !This is the program for the 2D TDQW
     !======================================================================
